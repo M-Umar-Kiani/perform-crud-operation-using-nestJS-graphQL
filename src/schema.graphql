@@ -1,0 +1,26 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Person {
+  id: Int!
+  username: String!
+  email: String!
+}
+
+type Query {
+  index: String!
+  getAllPersons: [Person!]!
+  findPersonById(personId: Int!): Person
+}
+
+type Mutation {
+  addPerson(addPersonArgs: AddPersonArgs!): Person!
+  updatePerson(personId: Int!, updatePersonArgs: AddPersonArgs!): Person!
+  deletePerson(personId: Int!): Person!
+}
+
+input AddPersonArgs {
+  username: String!
+  email: String!
+}
