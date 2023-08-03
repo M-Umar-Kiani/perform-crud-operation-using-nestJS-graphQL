@@ -9,7 +9,7 @@ export class PersonResolver{
 
     constructor(private readonly personService: PersonService){}
 
-    @Query((returns) => [Person])
+    @Query((returns) => [Person], {name:"persons"})
     getAllPersons(): Promise<PersonModel[]>{
         return this.personService.getAllPerson()
     }

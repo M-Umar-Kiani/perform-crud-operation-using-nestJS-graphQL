@@ -10,7 +10,7 @@ type Person {
 
 type Query {
   index: String!
-  getAllPersons: [Person!]!
+  persons: [Person!]!
   findPersonById(personId: Int!): Person
 }
 

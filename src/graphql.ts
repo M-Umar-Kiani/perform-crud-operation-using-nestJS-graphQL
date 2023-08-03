@@ -21,7 +21,7 @@ export interface Person {
 
 export interface IQuery {
     index(): string | Promise<string>;
-    getAllPersons(): Person[] | Promise<Person[]>;
+    persons(): Person[] | Promise<Person[]>;
     findPersonById(personId: number): Nullable<Person> | Promise<Nullable<Person>>;
 }
 
